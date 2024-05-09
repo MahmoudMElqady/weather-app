@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="d-flex justify-content-around p-3">
+        <div class="logo d-flex align-items-center">
+          <div class="p-2">
+            <img src="images/logo.png" class="w-100" alt="" />
+          </div>
+          <div>
+            <h1 class="fs-6 p-0 m-0 text-white fw-bold">weather</h1>
+            <p class="p-0 m-0">tagline goes here</p>
+          </div>
+        </div>
+        <div class="navs">
+          <ul class="d-flex">
+            <li class="nav-item list-group-item p-3">
+              <a class="nav-link active rounded-pill py-1 px-4" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item list-group-item p-3">
+              <a class="nav-link rounded-pill py-1 px-4" href="#about">About</a>
+            </li>
+            <li class="nav-item list-group-item p-3">
+              <a class="nav-link rounded-pill py-1 px-4" href="#photos"
+                >Photos</a
+              >
+            </li>
+            <li class="nav-item list-group-item p-3">
+              <a class="nav-link rounded-pill py-1 px-4" href="contact/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="back h-50">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8">
+            <form class="position-relative">
+              <input
+                class="form-control main-bg mt-5 rounded-pill p-3 border-0 main-color"
+                placeholder="Find Your Location"
+                type="search"
+                name="search"
+                id="search"
+              />
+              <input
+                class="position-absolute top-50 translate-middle btn btn-primary rounded-pill px-5"
+                type="button"
+                value="Find"
+                id="submit"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card cont-bg">
+            <div class="card-body text-center">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h5 id="todayName" class="card-title pb-4"></h5>
+
+                    </div>
+                    <div>
+                        <h5 id="todayDate" class="card-title pb-4"></h5>
+
+                    </div>
+
+                </div>
+              <div class="card-cap text-start">
+                <div>
+                  <p id="cityName" class="card-text fs-4 pb-3"></p>
+                </div>
+                <div class="d-flex justify-content-around align-items-center">
+                  <div>
+                    <p id="todayTemp" class="font90 fw-bolder text-light d-inline-block">
+                      
+                    </p>
+                  </div>
+                  <div id="todayIcon">
+                    
+                    
+                  </div>
+                </div>
+                <div>
+                  <p id="todayCond" class="text-primary fs-5 pb-3"></p>
+                </div>
+                <div class="d-flex">
+                  <div class="icon-img mx-1">
+                    <img
+                      class="w-100"
+                      src="images/icon-umberella@2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <p id="rain"></p>
+                  <div class="icon-img mx-1">
+                    <img
+                    class="w-100"
+                    src="images/icon-wind@2x.png"
+                    alt=""
+                  />
+                  </div>
+                  <p id="wind"></p>
+                  <div class="icon-img mx-1">
+                    <img
+                      class="w-100"
+                      src="images/icon-compass@2x.png"
+                      alt=""
+                    />
+                  </div>
+                  <p id="direction"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card sec">
+            <div class="card-body text-center sec">
+              <h5 id="tomName" class="card-title pb-4 sec"></h5>
+              <div class="card-cap text-start">
+                <div class="d-flex justify-content-around align-items-center">
+                  <div id="tomIcon">
+                    
+                    
+                  </div>
+                </div>
+                <div class="text-center">
+                  <p id="tomTemp" class="fs-2 text-light"></p>
+                  <p id="tomTempSmall"></p>
+                  <p id="tomCond" class="text-primary"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card cont-bg">
+            <div class="card-body text-center">
+              <h5 id="afterName" class="card-title pb-4"></h5>
+              <div class="card-cap text-start">
+                <div class="d-flex justify-content-around align-items-center">
+                    <div id="afterIcon">
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p id="afterTemp" class="fs-2 text-light"></p>
+                    <p id="afterTempSmall"></p>
+                    <p id="afterCond" class="text-primary"></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
